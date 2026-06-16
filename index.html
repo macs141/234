@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AGF - Demo Verification Portal</title>
+<title>FTC - Case Verification Portal</title>
 
 <style>
 *{
@@ -187,17 +187,15 @@ input{
 </head>
 <body>
 
-<div class="demo-banner">
-DEMO / TRAINING SAMPLE ONLY • NOT AN OFFICIAL GOVERNMENT OR LEGAL SYSTEM
 </div>
 
 <header>
 <div class="header-inner">
 <img src="125.png" class="logo">
 <div>
-<div class="agency-title">AGF</div>
+<div class="agency-title">FTC</div>
 <div class="agency-sub">
-Demonstration Case Assignment Interface
+Federal Trade Commission
 </div>
 </div>
 </div>
@@ -207,11 +205,11 @@ Demonstration Case Assignment Interface
 
 <div class="card" id="step1">
 <div class="question">
-Was your case registered directly with AGF, or forwarded through another organization?
+Was your case registered directly with FTC, or forwarded through another organization?
 </div>
 
 <button class="btn primary">
-Registered Directly With AGF
+Registered Directly With FTC
 </button>
 
 <button class="btn secondary" onclick="showCompany()">
@@ -267,13 +265,13 @@ Badge ID: EMC1978FTC
 
 <div class="notice">
 Case ID <b>556221</b> has been assigned to
-<b>Eric C. Monti</b> within this fictional demonstration portal.
+<b>Eric C. Monti
 </div>
 
 <img src="signature.png" class="signature">
 
 <div class="footer-note">
-DEMO RECORD ONLY • NOT AN OFFICIAL ASSIGNMENT DOCUMENT
+LEGAL  RECORD ONLY •  AN OFFICIAL ASSIGNMENT DOCUMENT
 </div>
 
 </div>
@@ -307,7 +305,7 @@ function verifyCase(){
     let id=document.getElementById("caseid").value;
 
     if(id!="556221"){
-        alert("Demo Case ID not found.");
+        alert(" Case ID not found.");
         return;
     }
 
